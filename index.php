@@ -153,9 +153,8 @@ function _mailize($email, $mailto = FALSE)
 }
 
 // run!
-echo ${'@at'}->run(ltrim(substr(file_get_contents(__FILE__), __COMPILER_HALT_OFFSET__)));
-__halt_compiler();
-
+echo ${'@at'}->run(substr(file_get_contents(__FILE__), __COMPILER_HALT_OFFSET__));
+__halt_compiler() ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
     <head>
